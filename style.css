@@ -1,0 +1,260 @@
+bodY{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    background: #cbf1f5;
+}
+
+.main-container{
+    height: 100vh;
+    max-width: 1700px;
+    padding: 8px 3% 3px 3%;
+}
+
+.tip-container{
+    width: 80%;
+    background: white;
+    margin: 8rem auto 0px;
+    padding: 15px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    /* max-width: 1800px; */
+}
+
+.error{
+    position: absolute;
+    color: red;
+    background: #fff;
+    top: 42%;
+    padding: 4px 3px;
+    left: 40%;
+    font-size: 12px;
+    display: none;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.percent-btn{
+    margin-top: -1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+
+#bill-input{
+    width: 100%;
+    border:  2px solid #cbf1f5;
+    padding: 8px;
+}
+
+#bill-input::placeholder{
+    font-size: 13px;
+}
+
+.col{
+    flex-basis: 45%;
+    margin: 0 2rem;
+    max-width: 1500px;
+}
+
+.cent-btn{
+    background: #1a3c40;
+    border: none;
+    color: white;
+    padding: 7px 5px;
+    width: 110%;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+/* .cent-btn.active{
+    background: aqua;
+    color: #1a3c40;
+} */
+
+.custom{
+    width: 110%;
+    margin-bottom: 8px;
+    padding: 10px 0 4px;
+    border-radius: 2px;
+    border: 2px solid #cbf1f5;
+}
+
+input::placeholder{
+    text-align: center;
+}
+.col.left h3{
+    color: #1a3c40;
+}
+
+.no-p{
+    width: 100%;
+    padding: 10px 8px;
+    background: transparent;
+    border: 2px solid #cbf1f5;
+}
+
+.error-no{
+    position: absolute;
+    background: white;
+    color: red;
+    padding: 3px;
+    left: 40%;
+    top: 20%;
+    display: none;
+    font-size: 12px;
+}
+.num-of-p{
+    position: relative;
+}
+
+.col.right{
+    background: #1a3c40;
+    padding: 20px 7px;
+    border-radius: 5px;
+}
+
+.amount-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 2rem;
+    row-gap: 1rem;
+    column-gap: 5rem;
+}
+
+.amount-con h3{
+    color: white;
+}
+
+.amount-con .per-person, .Total{
+    color: aqua;
+    font-size: 22px;
+}
+
+.reset-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.reset-btn button{
+    border: none;
+    background: rgb(4, 87, 87);
+    padding: 7px 5px;
+    width: 50%;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+
+.reset-btn button:hover{
+    background: aqua;
+    color: #088694;
+}
+
+@media   (max-width: 780px){
+    .col{
+        flex-basis: 45%;
+        margin: 0 rem;
+        max-width: 1500px;
+    }
+
+    h3{}
+}
+@media   (max-width: 780px){
+
+    .main-container{
+        max-width: 1700px;
+        padding: 1px 1px 0 1px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    
+    .col.right{
+        margin: 1.5rem 0 0 10px;
+        width: 85%;
+    }
+
+    .amount-con{
+        margin-left: 2rem;
+        row-gap: 0.5rem;
+        column-gap: 3rem;
+    }
+
+    .tip-container{
+        width: 90%;
+        margin: 2rem auto 3rem;
+        padding: 13px 8px 16px;
+    }
+
+    .error{
+        position: absolute;
+        color: red;
+        background: #fff;
+        top: 42%;
+        padding: 4px 3px;
+        left: 50%;
+    }
+
+    .cent-btn{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .reset-btn{
+        margin: -2rem auto 0;
+    }
+    .col.left h3{
+        font-size: 16px;
+    }
+ 
+    .amount-con h3{
+        font-size: 16px;
+    }
+    
+    .amount-con .price{
+        font-size: 18px;
+    }
+}
+
+@media   (max-width: 420px){
+
+    .tip-container{
+        width: 95%;
+        background: white;
+        margin: 3rem auto 5px;
+        padding: 10px 1px 10px;
+    }
+
+    .main-container{
+        height: 80vh;
+        max-width: 1700px;
+        padding: 2px ;
+    }
+
+    #bill-input{
+        padding: 10px;
+    }
+
+    .cent-btn{
+        width: 125%;
+    }
+
+    
+    .custom{
+        width: 120%;
+    }
+}
