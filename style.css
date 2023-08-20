@@ -1,11 +1,9 @@
-* {
-  font-family: "Montserrat Alternates", sans-serif;
-}
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: #cbf1f5;
+  background: #1a3c40;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-container {
@@ -101,6 +99,7 @@ input::placeholder {
   padding: 10px 8px;
   background: transparent;
   border: 2px solid #cbf1f5;
+  text-align: center;
 }
 
 .error-no {
@@ -115,6 +114,13 @@ input::placeholder {
 }
 .num-of-p {
   position: relative;
+}
+
+.fa-solid {
+  position: absolute;
+  color: #1a3c40;
+  bottom: 5%;
+  left: 5%;
 }
 
 .col.right {
